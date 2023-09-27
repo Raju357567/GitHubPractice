@@ -5,6 +5,7 @@ public class GitHubPractice {
 		System.out.println("GitHub Practice");
 		System.out.println("GitHub pushing practice");
 		//Hi boss
+		System.out.println("Kill me");
 	}
 
 }
