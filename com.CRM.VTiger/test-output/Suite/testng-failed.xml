@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.CRM.VTiger.ContactTest.CreateContactTest">
+        <methods>
+          <include name="closeDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="contactTest"/>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="create"/>
+          <include name="connectDatabase"/>
+        </methods>
+      </class> <!-- com.CRM.VTiger.ContactTest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.CRM.VTiger.OrganizatioTest.CreateOrganizationTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="closeDatabase"/>
+          <include name="launchBrowser"/>
+          <include name="createOrganization"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="connectDatabase"/>
+        </methods>
+      </class> <!-- com.CRM.VTiger.OrganizatioTest.CreateOrganizationTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
